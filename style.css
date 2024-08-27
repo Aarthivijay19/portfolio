@@ -370,3 +370,7 @@ form input ,form textarea{
         max-width: 100%; /* Allow them to take full width */
     }
 }
+
+.container{
+    background-color: #ababab;
+}
