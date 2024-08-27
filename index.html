@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css"
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo"><span>A</span>arthi.</h1> 
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>FullStack Developer</p>
+                <h1>Hi, I'm <span>Aarthi</span> from Chennai</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about---------->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/girl2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated full-stack developer specializing in Python. With expertise in both front-end and back-end development, I excel in creating robust, scalable web applications. My back-end proficiency lies in frameworks like Django, where I manage server-side logic, APIs, and databases. On the front-end, I utilize HTML, CSS, JavaScript, and modern libraries like React to deliver intuitive, responsive user experiences.
+
+                        Driven by a love for problem-solving and continuous learning, I thrive in building seamless, efficient applications that bring ideas to life. Whether it's designing complex backend systems or crafting engaging interfaces, I approach each project with creativity and technical precision.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('soft skills')">Soft Skills</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                          </div>
+                          <div class="tab-contents active-tab" id="skills">
+                            <h2>Back-End Development:(Python)</h2>
+                            <ul>
+                              <li><span>Python Programming:</span><br>Intermediate understanding of Python syntax, data structures, and OOP principles.</li>
+                              <li><span>Django:</span><br>Experience with Python web frameworks like Django for building robust backend systems.</li>
+                              <li><span>RESTful APIs:</span><br>Ability to design and implement RESTful APIs for communication between the client and server.</li>
+                              <li><span>Database Management:</span><br>Working knowledge of SQL databases like Oracle.</li>
+                            </ul>
+                            <h2>Front-End Development:</h2>
+                            <ul>
+                                <li><span>HTML/CSS:</span><br>Proficiency in writing clean and semantic HTML, as well as styling with CSS (including Flexbox, Grid, and responsive design).</li>
+                                <li><span>JavaScript:</span><br>Intermediate knowledge of vanilla JavaScript for DOM manipulation and dynamic UI interactions. Basic understanding of ES6+ features (e.g., arrow functions, promises, async/await).</li>
+                                <li><span>Front-End Frameworks:</span><br>Intermediate knowledge with atleast one JavaScript framework or library, such as React, for developing interactive UIs using React and its component-based architecture.</li>
+                                <li><span>Version Control:</span><br>Proficient with Git for version control, including branching, merging, and collaboration via GitHub/GitLab.</li>
+                                </ul>
+                          </div>
+                          <div class="tab-contents" id="soft skills">
+                            <ul>
+                                <li><span>Problem-Solving:</span><br>Strong analytical and problem-solving skills, with an ability to debug and resolve issues efficiently.</li>
+                                <li><span>Collaboration:</span><br>Experience working in teams using tools like Slack or Microsoft Teams for communication, and GitHub/GitLab for code collaboration.</li>
+                                <li><span>Learning & Adaptability:</span><br>Willingness to continuously learn new tools and frameworks as the tech landscape evolves.</li>
+                                </ul>
+                          </div>
+                          <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>Bharath Institute Of Higher Education And Research</span><br>BCA - 8.5CGPA (2024)</li><br>
+                                <li><span>Sri Ramakrishna Matriculation Higher Secondary School</span><br>HSLC - 86% (2021)</li><br>
+                                <li><span>Ebenezer Matriculation School</span><br>SSLC - 82% (2019)</li><br>
+                                <li><span>Completed Course</span><br>FullStack-Python(2024)</li>
+                            </ul>
+                          </div>
+                          
+                          
+                          
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------portfolio------------ -->
+    <section id="portfolio">
+        <h1>My Work</h1>
+        <div class="portfolio-container">
+            <div class="portfolio-item">
+                <img src="images/wrk1.jpg" alt="Work 1">
+                <div class="layer">
+                    <h3>Social Media App</h3><br>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.</p>
+                        <a href="https://github.com/Aklilu-Mandefro/social-media-app-using-html-css-and-javascript.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/wrk2.jpg" alt="Work 2">
+                <div class="layer">
+                    <h3>Music App</h3><br>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.</p>
+                        <a href="https://github.com/shadman346/music-player.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <img src="images/wrk3.jpg" alt="Work 3">
+                <div class="layer">
+                    <h3>Online Shopping App</h3><br>
+                    <p>The app connects you to the talented people around the world.
+                        Download it from playstore.</p>
+                        <a href="https://github.com/lemidia/shopping-website-javascript.git"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <a href="#" class="btn">See more</a>
+    </section>
+    <!-- -----------------contact----------- -->
+     <div id="contact">
+        <div class="container-box">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane icon-red"></i>aarthi.vijayan19@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone icon-red"></i>9444350044</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/my-cv (2).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit"class="btn btn2">submit</button>
+                </form>
+
+                
+            </div>
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontents= document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+</body>
+</html>
