@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 
 body {
     background: #080808;
@@ -249,125 +252,203 @@ ul {
 }
 
 /* ------------------------contact------------- */
-.contact-left{
-    flex-basis: 35%;
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #000000;
+    color: white;
+    margin: 0;
+    padding: 0;
 }
-.contact-right{
-    flex-basis: 60%;
-}
-.contact-left p{
-    margin-top: 30px;
-}
-.icon-red{
-    color: #ff004f;
-    margin-right: 15px;
-    font-size: 25px;
-}
-.social-icons{
-    margin-top: 30px;
-}
-.social-icons a{
-    text-decoration: none;
-    font-size: 30px;
-    margin-right: 15px;
-    color: #ababab;
-    display: inline-block;
-    transition: transform 0.5s;
 
-}
-.social-icons a:hover{
-    color:#ff004f;
-    transform: translateY(-5px);
-}
-.btn.btn2{
-    display: inline-block;
-    background: #ff004f;
-}
-.contact-right{
-    width: 100%;
-}
-form input ,form textarea{
-    width: 100%;
-    border:0;
-    outline: none;
-    background: #262626;
-    padding: 15px;
-    margin: 15px 0;
-    color:#fff;
-    font-size: 18px;
-    border-radius: 6px;
-}
+/* Container */
 .container-box {
-    display: flex;
-    justify-content: space-between; /* Add space between the contact info and form */
-    align-items: flex-start; /* Align items at the top */
-    gap: 30px; /* Adjust spacing between the elements */
-    padding: 50px; /* Add padding around the container */
-    max-width: 1200px; /* Optional: Set a maximum width for the container */
-    margin: auto; /* Center the container */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
 }
 
+/* Flexbox row for layout */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+/* Contact info column */
 .contact-left {
-    flex: 1; /* Make the contact info take up half the available space */
-    max-width: 45%; /* Optional: Limit the maximum width of the contact info */
+    flex: 1;
+    min-width: 300px;
+    margin-right: 40px;
 }
 
-.contact-left h2 {
-    font-size: 36px; /* Adjust the heading size */
-    margin-bottom: 20px; /* Space below the heading */
+/* Sub-title */
+.sub-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
 }
 
-.contact-left p, .contact-left .social-icons, .contact-left .btn {
-    margin-bottom: 20px; /* Space between the elements */
+/* Contact details */
+.contact-left p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
 }
 
-.contact-left .social-icons a {
-    margin-right: 10px; /* Space between social icons */
+.contact-left i {
+    color: #ff3d71; /* Icon color */
+    margin-right: 10px;
 }
 
+/* Social icons */
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    font-size: 1.8rem;
+    color: white;
+    margin-right: 20px;
+}
+
+.social-icons a:hover {
+    color: #ff3d71;
+}
+
+/* Download CV button */
+.btn2 {
+    background-color: #ff3d71;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.btn2:hover {
+    background-color: #ff1a56;
+}
+
+/* Contact form column */
 .contact-right {
-    flex: 1; /* Make the contact form take up half the available space */
-    max-width: 45%; /* Optional: Limit the maximum width of the contact form */
+    flex: 1;
+    min-width: 300px;
 }
 
-.contact-right form {
+/* Form styling */
+form {
     display: flex;
-    flex-direction: column; /* Stack form elements vertically */
-    gap: 15px; /* Space between form elements */
+    flex-direction: column;
 }
 
-.contact-right input, 
-.contact-right textarea {
-    width: 100%; /* Full width for the input and textarea */
+form input,
+form textarea {
+    width: 300px;
     padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    background-color: #333; /* Dark background for inputs */
-    color: white; /* White text */
-}
-
-.contact-right button {
-    width: 100%; /* Full width for the submit button */
-    padding: 10px;
-    background-color: #ff0066; /* Pink color for the button */
+    margin-bottom: 20px;
+    background-color: #333333;
     color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #aaaaaa;
+}
+
+form button {
+    background-color: #ff3d71;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 30px;
     cursor: pointer;
 }
 
-.contact-right button:hover {
-    background-color: #ff3366; /* Darken the button color on hover */
+form button:hover {
+    background-color: #ff1a56;
 }
 
+/* Responsive design */
 @media (max-width: 768px) {
-    .container-box {
-        flex-direction: column; /* Stack the elements vertically on smaller screens */
-        align-items: center; /* Center them */
+    .row {
+        flex-direction: column;
     }
 
-    .contact-left, .contact-right {
-        max-width: 100%; /* Allow them to take full width */
+    .contact-left,
+    .contact-right {
+        margin-right: 0;
     }
 }
+.icon-red{
+    color:#ff004f;
 
+}
+/* ------------------------------css for small screens--------------------------------- */
+.fa-bars{
+    display: none;
+}
+.fa-xmark{
+    display: none;
+}
+@media only screen and (max-width:600px){
+    #header {
+        background-image: url(images/phone\ background.jpg);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+        
+
+    }
+    .fa-bars{
+        display: block;
+        font-size: 25px;
+    }
+    .fa-xmark{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transform: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fa-xmark{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .contact-left,.contact-right{
+        flex-basis: 100%;
+    }
+
+
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+    
+}
